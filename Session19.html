@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Foodies</title>
+        <style>
+
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: Tahoma, sans-serif;
+                background-image: url('back.jpg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                width: 100vw;
+                height: 100vh;
+            }
+    
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                height: 80px;
+                align-items: center;
+                border-bottom: white 2px solid;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+    
+            .logo-Image{
+                height: 50px;
+            }
+    
+            a {
+                text-decoration: none;
+                color:black;
+                padding: 10px;
+                background-color: blanchedalmond;
+            }
+
+            a:hover {
+                color:white;
+                background-color: burlywood;
+            }
+    
+            .logo {
+                margin-left: 20px;
+            }
+    
+    
+            .links {
+                margin-right: 20px;
+            }
+
+            .heading {
+                text-align: center;
+                color: white;
+            }
+
+            .foodItems {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .foodItems img{
+                height: 250;
+                width: 400;
+            }
+
+            .food1{
+                border: 10px solid black;
+                color:purple;
+                text-align: center;
+                opacity: 0.4;
+            }
+
+            .food2{
+                border: 10px solid black;
+                color:purple;
+                text-align: center;
+                opacity: 0.4;
+            }
+            .food3{
+                border: 10px solid black;
+                color:purple;
+                text-align: center;
+                opacity: 0.4;
+            }
+
+            .food1:hover {
+                opacity:1;
+            }
+            .food2:hover {
+                opacity:1;
+            }
+            .food3:hover {
+                opacity:1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img class="logo-image" src="./logo.png">
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="./Session15.html">About Us</a>
+                <a href="./Session17.html">Contact Us</a>
+            </div>
+        </div> 
+        <div class="heading">
+            <h2>Favourite Foods</h2>
+        </div>
+        <div class="foodItems">
+            <div class="food1">
+                <img src="./burger.jpg">
+                <h4>Item Name : Burger</h4>
+                <h4>Item Price : 10$</h>
+            </div>
+            <div class="food2">
+                <img src="./pizza.gif">
+                <h4>Item Name : Pizza</h4>
+                <h4>Item Price : 12$</h>
+            </div>
+            <div class="food3">
+                <img src="./tandoor.jpg">
+                <h4>Item Name : Tandoor</h4>
+                <h4>Item Price : 15$</h>
+            </div>
+        </div>
+    </body>
+</html>
