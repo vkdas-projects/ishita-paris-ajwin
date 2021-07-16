@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Session 24</title>
+    </head>
+    <body>
+        <h1>Geolocation</h1>
+        <h2>Click the button to get your location :</h2>
+        <button onclick="getLocation()">Get Location</button>
+        <p id="location"></p>
+        <script>
+            var a = document.getElementById('location');
+            function getLocation() {   
+                if(navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else {
+                    a.innerHTML = "Geolocation is not supported by the browser";
+                }
+            }
+
+            function showPosition(position) {
+                a.innerHTML = "Latitude = " +position.coords.latitude +
+                " Longitude = " +position.coords.longitude; 
+            }
+        </script>
+
+    </body>
+</html>

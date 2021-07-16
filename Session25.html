@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Session 25</title>
+    </head>
+    <body>
+        <h1>Html Web Storage</h1>
+        <button onclick="counter()">Click Me (local storage)</button>
+        <button onclick="counter2()">Click Me (Session Storage)</button>
+        <h2 id="output"></h2>
+        <h2 id="output2"></h2>
+        <script>
+           function counter() {
+            if(typeof(Storage) !== "undefined")
+            {
+                if(localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                }
+                else{
+                    localStorage.clickcount = 1;
+                }
+
+                var b = document.getElementById("output");
+
+                b.innerHTML = "The button has been clicked " 
+                + localStorage.clickcount + " times";
+              
+            }
+
+            else 
+            {
+                var b = document.getElementById("output");
+
+                b.innerHTML = "Your browser does not support Web Storage";
+            }
+           }
+
+           function counter2() {
+            if(typeof(Storage) !== "undefined")
+            {
+                if(sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                }
+                else{
+                    sessionStorage.clickcount = 1;
+                }
+
+                var b = document.getElementById("output2");
+
+                b.innerHTML = "The button has been clicked " 
+                + sessionStorage.clickcount + " times";
+              
+            }
+
+            else 
+            {
+                var b = document.getElementById("output");
+
+                b.innerHTML = "Your browser does not support Web Storage";
+            }
+           }
+        </script>
+    </body>
+</html>

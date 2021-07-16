@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Session 21</title>
+        <style>
+            canvas {
+                border: black 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Intro to JavaScript</h1>
+        <h2><pre>Canvas</pre></h2>
+        <canvas width="500" height="500" id="myCanvas"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas")
+            var canvas = c.getContext("2d")
+            canvas.moveTo(0,0)
+            canvas.lineTo(200,200)
+            canvas.stroke()
+
+            canvas.strokeStyle = "blue"
+
+            canvas.moveTo(0,0)
+            canvas.lineTo(400,125)
+            canvas.stroke()
+
+            canvas.strokeRect(100, 100, 200, 200)
+            canvas.strokeStyle = "red"
+            canvas.strokeRect(200, 200, 200, 200)
+       
+            canvas.fillStyle ="red"
+            canvas.fillRect(300,300,200,200)
+
+       </script>
+    </body>
+</html>

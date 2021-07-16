@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Session 26</title>
+        <style>
+            #box{
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                padding: 5px;
+            }
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="box" ondrop="drop(event)" ondragover="dragAndDrop(event)"></div>
+        <img id="image" draggable="true" ondragstart="drag(event)" src="burger.jpg" width="200" height="150" alt="image of cn">
+   
+   
+    <script>
+        function dragAndDrop(e){
+            e.preventDefault();
+        }
+
+        function drag(e){
+            e.dataTransfer.setData("text",e.target.id);
+        }
+
+        function drop(e){
+            e.preventDefault();
+            var image = e.dataTransfer.getData("text");
+
+            e.target.appendChild(document.getElementById(image));
+        }
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-color: cadetblue;
+    text-align: center;
+    color: white;
+}
+
+ellipse {
+    fill: crimson;
+}
+
+rect {
+    fill: cyan;
+    stroke: black;
+    stroke-width: 5px;
+}
+polygon {
+    fill: palegoldenrod;
+    stroke: black;
+    stroke-width: 5px;
+}
