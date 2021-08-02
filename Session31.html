@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Session 31</title>
+        <style>
+            body {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+                color: white;
+                background: linear-gradient(#232526,#414345);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+        <h2>String</h2>
+        <h2>Number</h2>
+        <h2>Boolean</h2>
+        <h2>Array</h2>
+        <p id="showData"></p>
+        <p id="showDataType"></p>
+        <button onclick="showType()"><p>Show Data Type</p></button>
+        <button onclick="showData()"><p>Show Data</p></button>
+    </body>
+    <script>
+
+        var data1 = "Vijay";
+        var data2 = 5;
+        var data3 = false;
+        var data4 = [5,6, 7,8,10,12];
+
+        function showType(){
+            var a = document.getElementById('showDataType');
+            a.innerHTML = "Vijay is of the Data Type : " +typeof(data1)+
+                          ". 5 is of the Data Type : " +typeof(data2)+
+                          ". false is of the Data Type : " +typeof(data3)+
+                          ". [5,6] is of the Data Type : " +typeof(data4)
+
+        }
+
+        function showData(){
+            var b = document.getElementById('showData');
+            b.innerHTML = data1+ ", " +data2+ ", " +data3+ ', ' +data4[2]
+        }
+    </script>
+</html>

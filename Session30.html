@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Session 30</title>
+        <style>
+            body {
+                background-color: darkorange;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+                color: white;
+                background: linear-gradient(red,green);
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Data Types</h1>
+        <p id="showData"></p>
+        <button onclick="showType()"><p>Reveal Data Type</p></button>
+    </body>
+    <script>
+        function showType(){
+            var data = 5;
+            var para = document.getElementById('showData');
+            para.innerHTML = "The Data Type is " +typeof(data)
+        }
+    </script>
+</html>
